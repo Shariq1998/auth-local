@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.bg-img{
+  background: url('https://img.freepik.com/free-photo/flat-lay-desk-dark-concept-with-copy-space_23-2148459510.jpg?w=1480&t=st=1693945690~exp=1693946290~hmac=010c7a880019e545487ffdf62cca71fba86fcc646db5a9287ebc85609a1c7815');
+  height: 160vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 200%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  display: block;
+  
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    top: 26%;
+  }
+}
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+  margin-top: 16px;
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+
+
+.field button{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+  width: 100%;
+}
+.field button[type="submit"]:hover{
+  background: #2691d9;
+}
+
+
+.button{
+  font-size: 15px;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+  margin-top: 10px;
+}
+ a{
+  color: #3498db !important;
+  text-decoration: none !important;
+}
+ a:hover{
+  text-decoration: underline !important;
+}
+
+#box2{
+    display: none;
+}
+
+
+#dashboard{
+    display: none;
+}
+
+.box3{
+    display: flex;
+    z-index: 999;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 13px;
+    border-bottom: solid white;
+    padding-bottom: 18px;
+    
+}
+
+#dash{
+    color: white;
+    margin-left: 40px;
+    font-size: 27px;
+}
+
+#log-out{
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Montserrat',sans-serif;
+    margin-right: 17px;
+    padding: 2px 16px 2px 15px
+}
+
+#log-out:hover{
+  background: #2691d9;
+}
+
+#box3a{
+  display: flex;
+  width: 67%;
+  justify-content: end;
+  align-items: baseline;
+}
+
+#heading{
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    position: absolute;
+    z-index: 999;
+    margin-right: 144px;
+}
+
+#heading2{
+  color: white;
+  position: absolute;
+  z-index: 999;
+  top: 165%;
+  left: 41%;
+  font-family: 'Montserrat',sans-serif;
+
+}
+
+
+
+#todolist{
+  z-index: 999;
+  position: absolute;
+  top: 27%;
+  width: 100%;
+  
+}
+
+#submit{
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+
+#box4{
+  display: flex;
+  margin: auto;
+  margin-top: 70px;
+  width: 100%;
+  justify-content: center;
+
+}
+
+#myInput{
+  background-color: white;
+  color: black;
+  width: 55%;
+  padding: 10px;
+  font-family: 'Montserrat',sans-serif;
+
+}
+
+.myButton{
+  border: 1px solid #2691d9;
+  background: #3498db;
+  color: white;
+  width: 13%;
+  font-family: 'Montserrat',sans-serif;
+  margin-left: 9px;
+
+}
+
+.myButton:hover{
+  background: #2691d9;
+}
+
+#myUl{
+  width: 96%;
+}
+.list {
+  background-color: white;
+  padding: 10px;
+  width: 55%;
+  color: black;
+  border: 1px white solid;
+  height: 47px;
+  margin-top: 30px;
+}
+
+.myDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.myCancel {
+  color: black;
+  background-color: white;
+  border: 1px white solid;
+  height: 47px;
+  padding: 13px;
+  cursor: pointer;
+  width: 50px;
+  margin-top: 30px;
+}
+
+#clearButton{
+  margin-left: 44%;
+  padding: 8px;
+  background: #3498db;
+  color: white;
+  font-family: 'Montserrat',sans-serif;
+  border: 1px solid #2691d9;
+
+}
+
+#clearButton:hover{
+  background: #2691d9;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Transparent Login Form HTML CSS</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+   </head>
+   <body>
+   
+      <div class="bg-img">
+         <div class="content" id="box1">
+            <header>Login Form</header>
+            <form onsubmit="handleFormSubmit1(event)">
+               <div class="field">
+                  <span class="fa-solid fa-user"></span>
+                  <input type="text" placeholder="Username" id="username">
+               </div>
+             
+            <div class="field space">
+                  <span class="fa-solid fa-lock"></span>
+                  <input type="password"   placeholder="Password" id="password">
+               </div>
+               <div class="field">
+                  <button  type="submit" >LOG IN</button>
+               </div>
+            </form>
+            <div class="button">
+               Don't have account?
+               <a id="sign-up" href="#">Signup Now</a>
+            </div>
+        
+          
+
+              </div>
+
+              <div class="content" id="box2">
+                <header>SignUp Form</header>
+                <form onsubmit="handleFormSubmit(event)">
+                   <div class="field">
+                    <span class="fa-solid fa-user"></span>
+                      <input type="text" placeholder="Username" id="username2">
+                   </div>
+                   <div class="field space">
+                    <span class="fa-solid fa-at"></span>
+                      <input type="text"  placeholder="Email" id="email">
+                   </div>
+                   <div class="field space">
+                    <span class="fa-solid fa-lock"></span>
+                      <input type="password" placeholder="Password" id="password2">
+                   </div>
+                
+                
+                   <div class="field">
+                      <button  type="submit">SIGN UP</button>
+                   </div>
+                </form>
+                <div class="button">
+                   Already have an account?
+                   <a id="sign-in" href="#">Signin Now</a>
+                </div>
+             </div>
+            <div id="dashboard">
+             <div class="box3">
+                <div id="dash">Dashboard</div>
+                <div id="box3a">
+                <div id="log-out">Log Out</div>
+             
+             <h3 id="heading">Welcome hello</h3>
+                </div>
+                <h1 id="heading2">To Do App</h1>
+             </div>
+
+            <div id="todolist">
+             <div id="box4"> 
+  <input type="text" id="myInput" placeholder="Title...">
+  <button class="myButton" id="myButton" onclick="addButton()">Add</button>
+</div>
+
+<ul id="myUl">
+
+</ul>
+
+<button id="clearButton">Clear List</button>
+            </div>
+             </div>      
+      </div>
+     
+   <script src="./signup.js"></script>
+   <script src="./login.js"></script>
+   <script src="./todo.js"></script>
+   
+   
+
+   </body>
+</html>
+    
